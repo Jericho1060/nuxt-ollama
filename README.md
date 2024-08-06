@@ -1,4 +1,4 @@
-# Nuxt Ollama
+# <img src="./nuxt-ollama.png" style="width:40px;"> Nuxt Ollama
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
