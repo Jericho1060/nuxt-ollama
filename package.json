@@ -1,6 +1,6 @@
 {
   "name": "nuxt-ollama",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy ollama integration for Nuxt",
   "repository": "jericho1060/nuxt-ollama",
   "license": "MIT",
@@ -26,7 +26,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "bun lint && bun test && bun prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
