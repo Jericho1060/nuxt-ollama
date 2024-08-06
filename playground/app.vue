@@ -31,7 +31,7 @@
   </div>
   <div style="margin-top:50px;">
     <pre>{{ response }}</pre>
-    <button @click="refresh">
+    <button @click="refresh()">
       Refresh
     </button>
   </div>
