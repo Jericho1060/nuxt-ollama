@@ -7,6 +7,8 @@
 
 Simple integration of the official Ollama JavaScript Library for your Nuxt application.
 
+You have to install Ollama to use this module. See [Official Website](https://ollama.com/download) to download it for your system.
+
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
 <!-- - [🏀 Online playground](https://stackblitz.com/github/jericho/nuxt-ollama?file=playground%2Fapp.vue) -->
