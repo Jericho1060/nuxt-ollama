@@ -93,26 +93,26 @@ Contributions are welcome, feel free to open an issue or submit a pull request!
 
   ```bash
   # Install dependencies
-  npm install
+  bun install
   
   # Generate type stubs
-  npm run dev:prepare
+  bun dev:prepare
   
   # Develop with the playground
-  npm run dev
+  bun dev
   
   # Build the playground
-  npm run dev:build
+  bun dev:build
   
   # Run ESLint
-  npm run lint
+  bun lint
   
   # Run Vitest
-  npm run test
-  npm run test:watch
+  bun test
+  bun test:watch
   
   # Release new version
-  npm run release
+  bun release
   ```
 
 </details>
