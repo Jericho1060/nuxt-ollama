@@ -26,7 +26,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "bun lint && bun test && bun prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.12.4",
+    "defu": "^6.1.4",
     "ollama": "^0.5.6"
   },
   "devDependencies": {

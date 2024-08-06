@@ -25,7 +25,8 @@ export default defineNuxtModule<ModuleOptions>({
 
     // expose options to runtime config
     const runtimeConfig = _nuxt.options.runtimeConfig
-    runtimeConfig.public.ollama = defu(runtimeConfig.public?.ollama || {}, _options)
+    const currentConfig = (runtimeConfig.public.ollama ?? {}) as OllamaOptions
+    runtimeConfig.public.ollama = defu(currentConfig, _options)
 
     addImports({
       name: 'useOllama',
