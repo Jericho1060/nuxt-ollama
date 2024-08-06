@@ -11,11 +11,12 @@ You have to install Ollama to use this module. See [Official Website](https://ol
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
-<!-- - [🏀 Online playground](https://stackblitz.com/github/jericho/nuxt-ollama?file=playground%2Fapp.vue) -->
+- [🏀 Online playground](https://stackblitz.com/github/jericho1060/nuxt-ollama?file=playground%2Fapp.vue)
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 ## Quick Setup
 
 Install the module to your Nuxt application with one command:
+
 ```bash
 npx nuxi module add nuxt-ollama
 ```
