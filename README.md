@@ -13,39 +13,6 @@ You have to install Ollama to use this module. See [Official Website](https://ol
 
 <!-- - [🏀 Online playground](https://stackblitz.com/github/jericho/nuxt-ollama?file=playground%2Fapp.vue) -->
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
-
-## Features
-
-- Vue 3 composable
-- Server utils
-
-usage on pages or server side:
-```ts
-const ollama = useOllama()
-
-const response = await ollama.chat({
-  model: 'llama3.1',
-  messages: [{ role: 'user', content: 'Why is the sky blue?' }],
-})
-console.log(response.message.content)
-```
-
-See official [Ollama JavaScript Library documentation](https://github.com/ollama/ollama-js) for more information or examples.
-
-## Settings
-
-```ts
-// nuxt.config.ts
-export default defineNuxtConfig({
-  ollama: {
-    protocol: 'http', // or 'https'
-    host: 'localhost', //domain or ip address
-    port: 11434, // port
-    proxy: false, // use proxy
-  }
-})
-```
-
 ## Quick Setup
 
 Install the module to your Nuxt application with one command: *(Pending module approval on Nuxt Module)*
@@ -83,6 +50,39 @@ export default {
 </details>
 
 That's it! You can now use Nuxt Ollama in your Nuxt app ✨
+
+## Features
+
+- Vue 3 composable
+- Server utils
+
+Usage on pages or server side:
+
+```ts
+const ollama = useOllama()
+
+const response = await ollama.chat({
+  model: 'llama3.1',
+  messages: [{ role: 'user', content: 'Why is the sky blue?' }],
+})
+console.log(response.message.content)
+```
+
+See official [Ollama JavaScript Library documentation](https://github.com/ollama/ollama-js) for more information or examples.
+
+## Settings
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  ollama: {
+    protocol: 'http', // or 'https'
+    host: 'localhost', //domain or ip address
+    port: 11434, // port
+    proxy: false, // use proxy
+  }
+})
+```
 
 ## Contribution
 
