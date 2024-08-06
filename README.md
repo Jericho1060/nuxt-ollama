@@ -15,7 +15,7 @@ You have to install Ollama to use this module. See [Official Website](https://ol
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 ## Quick Setup
 
-Install the module to your Nuxt application with one command: *(Pending module approval on Nuxt Module)*
+Install the module to your Nuxt application with one command:
 ```bash
 npx nuxi module add nuxt-ollama
 ```
