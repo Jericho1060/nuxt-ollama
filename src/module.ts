@@ -34,6 +34,12 @@ export default defineNuxtModule<ModuleOptions>({
       from: resolver.resolve('./runtime/composables/useOllama'),
     })
 
+    addImports({
+      name: 'useOllamaUtils',
+      as: 'useOllamaUtils',
+      from: resolver.resolve('./runtime/composables/useOllamaUtils'),
+    })
+
     addServerImportsDir(resolver.resolve('./runtime/server/utils'))
   },
 })

@@ -13,6 +13,7 @@ You have to install Ollama to use this module. See [Official Website](https://ol
 
 - [🏀 Online playground](https://stackblitz.com/github/jericho1060/nuxt-ollama?file=playground%2Fapp.vue)
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
+
 ## Quick Setup
 
 Install the module to your Nuxt application with one command:
@@ -76,6 +77,7 @@ See official [Ollama JavaScript Library documentation](https://github.com/ollama
 ```ts
 // nuxt.config.ts
 export default defineNuxtConfig({
+  //...
   ollama: {
     protocol: 'http', // or 'https'
     host: 'localhost', //domain or ip address
@@ -96,26 +98,13 @@ Contributions are welcome, feel free to open an issue or submit a pull request!
 
   ```bash
   # Install dependencies
-  bun install
+  npm install
   
   # Generate type stubs
-  bun dev:prepare
+  npm run dev:prepare
   
   # Develop with the playground
-  bun dev
-  
-  # Build the playground
-  bun dev:build
-  
-  # Run ESLint
-  bun lint
-  
-  # Run Vitest
-  bun test
-  bun test:watch
-  
-  # Release new version
-  bun release
+  npm run dev
   ```
 
 </details>
