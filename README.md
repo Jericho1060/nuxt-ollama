@@ -12,7 +12,8 @@ You have to install Ollama to use this module. See [Official Website](https://ol
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
 - [🏀 Online playground](https://stackblitz.com/github/jericho1060/nuxt-ollama?file=playground%2Fapp.vue)
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+
+- [📖 &nbsp;Documentation](https://nuxt-ollama.jericho.dev/)
 
 ## Quick Setup
 
@@ -22,41 +23,14 @@ Install the module to your Nuxt application with one command:
 npx nuxi module add nuxt-ollama
 ```
 
-<details>
-<summary>Or install it with your favorite package manager:</summary>
-
-```bash
-# NPM:
-npm install nuxt-ollama
-
-# PNPM:
-pnpm add nuxt-ollama
-
-# Yarn:
-yarn add nuxt-ollama
-
-# Bun
-bun add nuxt-ollama
-```
-
-Add `nuxt-ollama` to the `modules` section of `nuxt.config.js`:
-
-```ts
-// nuxt.config.ts
-export default {
-  modules: [
-    'nuxt-ollama',
-  ],
-}
-```
-</details>
-
 That's it! You can now use Nuxt Ollama in your Nuxt app ✨
 
 ## Features
 
 - Vue 3 composable
 - Server utils
+
+## Usage
 
 Usage on pages or server side:
 
@@ -70,7 +44,7 @@ const response = await ollama.chat({
 console.log(response.message.content)
 ```
 
-See official [Ollama JavaScript Library documentation](https://github.com/ollama/ollama-js) for more information or examples.
+See [documentation](https://nuxt-ollama.jericho.dev/) for more information or examples.
 
 ## Settings
 
