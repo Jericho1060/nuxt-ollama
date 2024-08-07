@@ -1,6 +1,6 @@
 {
   "name": "nuxt-ollama",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easy ollama integration for Nuxt",
   "repository": "jericho1060/nuxt-ollama",
   "license": "MIT",
