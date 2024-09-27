@@ -46,7 +46,7 @@
     "@types/node": "^20.14.11",
     "changelogen": "^0.5.5",
     "eslint": "^9.7.0",
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.13.2",
     "typescript": "latest",
     "vitest": "^2.0.3",
     "vue-tsc": "^2.0.26"
