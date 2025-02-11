@@ -3,14 +3,19 @@ import { defu } from 'defu'
 import type { OllamaOptions } from '~/src/types'
 
 // Module options TypeScript interface definition
-export interface ModuleOptions extends OllamaOptions {}
+export interface ModuleOptions extends OllamaOptions {
+  protocol: string
+  host: string
+  port: number
+  proxy: boolean
+}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxt-ollama',
     configKey: 'ollama',
     compatibility: {
-      nuxt: '>=3.12',
+      nuxt: '>=3.15',
     },
   },
   // Default configuration options of the Nuxt module
