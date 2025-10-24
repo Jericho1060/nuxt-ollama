@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v1.1.1
+
+[compare changes](https://github.com/jericho1060/nuxt-ollama/compare/v1.0.16...v1.1.1)
+
 ## v1.0.16
 
 [compare changes](https://github.com/jericho1060/nuxt-ollama/compare/v1.0.15...v1.0.16)
