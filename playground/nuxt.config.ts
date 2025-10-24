@@ -1,8 +1,8 @@
 export default defineNuxtConfig({
+
   modules: ['../src/module'],
   devtools: { enabled: true },
-
-  compatibilityDate: '2025-04-15',
+  compatibilityDate: '2025-10-24',
 
   ollama: {
     protocol: 'http',

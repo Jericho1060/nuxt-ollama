@@ -72,13 +72,13 @@ Contributions are welcome, feel free to open an issue or submit a pull request!
 
   ```bash
   # Install dependencies
-  npm install
+  pnpm install
   
   # Generate type stubs
-  npm run dev:prepare
+  pnpm run dev:prepare
   
   # Develop with the playground
-  npm run dev
+  pnpm run dev
   ```
 
 </details>

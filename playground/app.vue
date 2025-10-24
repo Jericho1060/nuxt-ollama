@@ -50,7 +50,7 @@ const send = async () => {
   messages.value.push({ role: 'user', content: chatMessage.value })
   chatMessage.value = ''
   const response = await ollama.chat({
-    model: 'llama3.1',
+    model: 'llama3.2',
     messages: messages.value,
     stream: true,
   })
@@ -65,7 +65,9 @@ const send = async () => {
         content: '',
       })
     }
-    messages.value[length].content += part.message.content
+    if (part.message?.content && messages.value[length]) {
+      messages.value[length].content += part.message.content
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 import { defineNuxtModule, createResolver, addImports, addServerImportsDir } from '@nuxt/kit'
 import { defu } from 'defu'
-import type { OllamaOptions } from '~/src/types'
+import type { OllamaOptions } from './types'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions extends OllamaOptions {
@@ -15,7 +15,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-ollama',
     configKey: 'ollama',
     compatibility: {
-      nuxt: '>=3.15',
+      nuxt: '>=4.0.0',
     },
   },
   // Default configuration options of the Nuxt module
