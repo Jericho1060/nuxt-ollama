@@ -1,4 +1,4 @@
-# <img src="./nuxt-ollama.png" style="width:40px;"> Nuxt Ollama
+# <img src="./nuxt-ollama.png" style="width:50px;"> Nuxt Ollama
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -18,9 +18,14 @@ You have to install Ollama to use this module. See [Official Website](https://ol
 ## Quick Setup
 
 Install the module to your Nuxt application with one command:
-
+- using npm
 ```bash
 npx nuxi module add nuxt-ollama
+
+```
+- using pnpm
+```bash
+pnpx nuxi module add nuxt-ollama
 ```
 
 That's it! You can now use Nuxt Ollama in your Nuxt app ✨
