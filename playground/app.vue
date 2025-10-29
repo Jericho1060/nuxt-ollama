@@ -21,7 +21,12 @@
       :key="'message_'+i"
     >
       <strong>{{ m.role }}</strong>
-      <div v-html="m.content.replaceAll('\n', '<br>')" />
+      <div
+        v-for="(line, index) in m.content.split('\n')"
+        :key="`line_${index}`"
+      >
+        {{ line }}
+      </div>
       <hr>
     </div>
     <div>
