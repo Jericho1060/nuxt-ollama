@@ -6,8 +6,9 @@ import type { OllamaOptions } from './types'
 export interface ModuleOptions extends OllamaOptions {
   protocol: string
   host: string
-  port: number
+  port: number | null
   proxy: boolean
+  api_key: string | null
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -22,8 +23,9 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     protocol: 'http',
     host: 'localhost',
-    port: 11434,
+    port: null,
     proxy: false,
+    api_key: null,
   },
   setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)

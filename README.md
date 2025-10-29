@@ -43,7 +43,7 @@ Usage on pages or server side:
 const ollama = useOllama()
 
 const response = await ollama.chat({
-  model: 'llama3.1',
+  model: 'gpt-oss:120b',
   messages: [{ role: 'user', content: 'Why is the sky blue?' }],
 })
 console.log(response.message.content)
@@ -52,6 +52,8 @@ console.log(response.message.content)
 See [documentation](https://nuxt-ollama.jericho.dev/) for more information or examples.
 
 ## Settings
+
+### Local models
 
 ```ts
 // nuxt.config.ts
@@ -66,11 +68,26 @@ export default defineNuxtConfig({
 })
 ```
 
+### - Cloud models with API key on https://ollama.com
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  //...
+  ollama: {
+    protocol: 'https', // or 'https'
+    host: 'ollama.com', //domain or ip address
+    api_key: 'your_api_key_here' // your Ollama API key
+  }
+})
+```
+
+
 ## Contribution
 
 Contributions are welcome, feel free to open an issue or submit a pull request!
 
-*guidelines coming soon*
+Please see the [contributing guide](CONTRIBUTING.md) for details.
 
 <details>
   <summary>Local development</summary>

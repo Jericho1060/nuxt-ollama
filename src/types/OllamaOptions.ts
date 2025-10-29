@@ -1,6 +1,7 @@
 export interface OllamaOptions {
   protocol: string
   host: string
-  port: number
+  port: number | null
   proxy: boolean
+  api_key: string | null
 }

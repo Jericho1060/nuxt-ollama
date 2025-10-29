@@ -1,6 +1,21 @@
 <template>
   <div>
     Nuxt module playground!
+    <h2>Models:</h2>
+    <div>
+      <button @click="refreshList()">
+        Refresh Models
+      </button>
+    </div>
+    <ul>
+      <li
+        v-for="model in list"
+        :key="model.name"
+      >
+        {{ model.name }}
+      </li>
+    </ul>
+    <h2>Chat:</h2>
     <div
       v-for="(m, i) in messages"
       :key="'message_'+i"
@@ -29,6 +44,7 @@
       </button>
     </div>
   </div>
+  <h2>API Fetch Test:</h2>
   <div style="margin-top:50px;">
     <pre>{{ response }}</pre>
     <button @click="refresh()">
@@ -72,4 +88,6 @@ const send = async () => {
 }
 
 const { data: response, refresh } = await useFetch('/api/ollama')
+
+const { data: list, refresh: refreshList } = await useFetch('/api/list')
 </script>

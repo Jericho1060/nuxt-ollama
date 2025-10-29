@@ -4,8 +4,14 @@ import { useRuntimeConfig } from '#imports'
 
 export function useOllama() {
   const options: ModuleOptions = useRuntimeConfig().public.ollama as ModuleOptions
+  const headers: Record<string, string> = {}
+  if (options.api_key) {
+    headers.Authorization = `Bearer ${options.api_key}`
+  }
+  const host = `${options.protocol}://${options.host}${options.port ? `:${options.port}` : ''}`
   return new Ollama({
-    host: `${options.protocol}://${options.host}:${options.port}`,
+    host,
     proxy: options.proxy,
+    headers,
   })
 }
