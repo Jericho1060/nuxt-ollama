@@ -19,7 +19,7 @@ importers:
         version: 6.1.4
       ollama:
         specifier: ^0.6.2
-        version: 0.6.2
+        version: 0.6.3
     devDependencies:
       '@nuxt/devtools':
         specifier: ^3.1.0
@@ -3761,8 +3761,8 @@ packages:
   ohash@2.0.11:
     resolution: {integrity: sha512-RdR9FQrFwNBNXAr4GixM8YaRZRJ5PUWbKYbE5eOsrwAjJW0q2REGcf79oYPsLyskQCZG1PLN+S/K1V00joZAoQ==}
 
-  ollama@0.6.2:
-    resolution: {integrity: sha512-VcPZpBuz3kdoJIcyWpiDS1MSDSZKyQPM6f9wi405vdLOB5yZWiQ+m7NSTrYsntQyCp/s/Yy0quKiYerhq7Liog==}
+  ollama@0.6.3:
+    resolution: {integrity: sha512-KEWEhIqE5wtfzEIZbDCLH51VFZ6Z3ZSa6sIOg/E/tBV8S51flyqBOXi+bRxlOYKDf8i327zG9eSTb8IJxvm3Zg==}
 
   on-change@6.0.0:
     resolution: {integrity: sha512-J7kocOS+ZNyjmW6tUUTtA7jLt8GjQlrOdz9z3yLNTvdsswO+b5lYSdMVzDczWnooyFAkkQiKyap5g/Zba+cFRA==}
@@ -9667,7 +9667,7 @@ snapshots:
 
   ohash@2.0.11: {}
 
-  ollama@0.6.2:
+  ollama@0.6.3:
     dependencies:
       whatwg-fetch: 3.6.20
 
