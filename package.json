@@ -4,7 +4,7 @@
   "description": "Easy ollama integration for Nuxt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jericho1060/nuxt-ollama.git"
+    "url": "git+https://github.com/thoda-dev/nuxt-ollama.git"
   },
   "license": "MIT",
   "type": "module",
