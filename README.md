@@ -11,7 +11,7 @@ You have to install Ollama to use this module. See [Official Website](https://ol
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
-- [🏀 Online playground](https://stackblitz.com/github/jericho1060/nuxt-ollama?file=playground%2Fapp.vue)
+- [🏀 Online playground](https://stackblitz.com/github/thoda-dev/nuxt-ollama?file=playground%2Fapp.vue)
 
 - [📖 &nbsp;Documentation](https://nuxt-ollama.jericho.dev/)
 
