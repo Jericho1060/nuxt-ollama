@@ -1,4 +1,4 @@
-import { defineNuxtModule, createResolver, addImports, addServerImportsDir } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addServerImportsDir, addImportsDir } from '@nuxt/kit'
 import { defu } from 'defu'
 import type { OllamaOptions } from './types'
 
@@ -16,7 +16,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-ollama',
     configKey: 'ollama',
     compatibility: {
-      nuxt: '>=4.0.0',
+      nuxt: '>=3.0.0',
     },
   },
   // Default configuration options of the Nuxt module
@@ -35,18 +35,7 @@ export default defineNuxtModule<ModuleOptions>({
     const currentConfig = (runtimeConfig.public.ollama ?? {}) as OllamaOptions
     runtimeConfig.public.ollama = defu(currentConfig, _options)
 
-    addImports({
-      name: 'useOllama',
-      as: 'useOllama',
-      from: resolver.resolve('./runtime/composables/useOllama'),
-    })
-
-    addImports({
-      name: 'useOllamaUtils',
-      as: 'useOllamaUtils',
-      from: resolver.resolve('./runtime/composables/useOllamaUtils'),
-    })
-
+    addImportsDir(resolver.resolve('./runtime/composables'))
     addServerImportsDir(resolver.resolve('./runtime/server/utils'))
   },
 })

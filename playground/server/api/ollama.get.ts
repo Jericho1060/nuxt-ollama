@@ -1,7 +1,7 @@
 export default defineEventHandler(async () => {
   const ollama = useOllama()
   return await ollama.chat({
-    model: 'gpt-oss:120b',
+    model: 'llama3.2',
     messages: [
       {
         role: 'user',
